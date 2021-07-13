@@ -20,6 +20,10 @@ main {
     align-items: center;
 }
 
+.container {
+    width: 1050px;
+}
+
 /* =========================
         Banner Style
 ===========================*/
@@ -71,4 +75,40 @@ main {
 
 .banner:hover .inner-banner .banner-image img {
     transform: scale(1.2) rotate(15deg);
+}
+
+
+/* =========================
+        Players Style
+===========================*/
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+}
+
+.player {
+    padding: 15px;
+    padding-bottom: 33px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player .player-image img {
+    width: 100%;
+}
+
+.player-details h3 {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    color: #18191F;
+    font-size: 28px;
+}
+
+.player-details p {
+    margin: 0px;
+    color: #6C6C6C;
+    font-size: 16px;
 }
