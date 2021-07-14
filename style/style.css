@@ -158,3 +158,61 @@ footer .copyright {
     margin-bottom: 0;
     font-size: 18px;
 }
+
+
+/* =================================
+            Media query
+===================================*/
+
+@media only screen and (max-width:668px) {
+
+    .container,
+    .inner-banner {
+        width: 360px;
+        margin: 0;
+    }
+
+    .banner {
+        padding: 46px 0 62px;
+    }
+
+    .inner-banner,
+    .players {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+
+    .inner-banner .banner-text {
+        padding-right: 50px;
+    }
+
+    .inner-banner .banner-text h2 {
+        font-size: 36px;
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .inner-banner .banner-image {
+        margin-top: 50px;
+        width: 329px;
+    }
+
+    .inner-banner .banner-image img {
+        width: 329px;
+    }
+
+    .banner:hover .inner-banner .banner-image img {
+        transform: scale(.8) rotate(15deg);
+    }
+
+
+    footer {
+        margin-top: 43px;
+    }
+
+    footer .logo img {
+        width: 271px;
+    }
+}
