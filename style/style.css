@@ -53,6 +53,7 @@ main {
     width: 1143px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px;
 }
 
 .inner-banner .banner-text {
@@ -399,9 +400,8 @@ footer .copyright {
         padding: 55px 0 62px;
     }
 
-    .inner-banner {
-        margin-left: 20px;
-        margin-right: 20px;
+    .inner-banner .banner-text {
+        padding: 0 40px;
     }
 
     .inner-banner .banner-text {
