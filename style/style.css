@@ -14,6 +14,15 @@ body {
     padding: 0;
 }
 
+h2,
+h3 {
+    color: #0A0826;
+}
+
+p {
+    color: #6C6C6C;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -22,6 +31,11 @@ main {
 
 .container {
     width: 1050px;
+}
+
+.section-title {
+    margin-top: 70px;
+    text-transform: capitalize;
 }
 
 /* =========================
@@ -112,16 +126,60 @@ main {
 .player-details h3 {
     margin-top: 13px;
     margin-bottom: 10px;
-    color: #18191F;
     font-size: 28px;
 }
 
 .player-details p {
     margin: 0px;
-    color: #6C6C6C;
     font-size: 16px;
 }
 
+/* =========================
+        News Style
+===========================*/
+.all-news {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 27px;
+}
+
+.all-news .single-news .news-thumbnail img {
+    width: 100%;
+}
+
+.all-news .single-news .news-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-more-btn {
+    text-decoration: none;
+    border: 1px solid #0A0826;
+    color: #0A0826;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: .3s ease;
+}
+
+.see-more-btn:hover {
+    background: #0A0826;
+    color: #FFFFFF;
+}
+
+.time {
+    font-size: 12px;
+}
+
+/* =========================
+        Partnerships Style
+===========================*/
+.partnerships {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 
 /* =========================
         Footer Style
@@ -164,6 +222,8 @@ footer .copyright {
             Media query
 ===================================*/
 
+
+/* -----------Mobile device------------- */
 @media only screen and (max-width:668px) {
 
     .container,
@@ -172,15 +232,25 @@ footer .copyright {
         margin: 0;
     }
 
+    .section-title {
+        margin-left: 15px;
+    }
+
     .banner {
-        padding: 46px 0 62px;
+        padding: 55px 0 62px;
     }
 
     .inner-banner,
-    .players {
+    .players,
+    .all-news,
+    .partnerships {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0 15px;
+    }
+
+    .partnerships {
+        text-align: center;
     }
 
 
@@ -190,7 +260,7 @@ footer .copyright {
 
     .inner-banner .banner-text h2 {
         font-size: 36px;
-        padding-top: 0;
+        margin-top: 0;
         margin-bottom: 30px;
     }
 
@@ -207,9 +277,14 @@ footer .copyright {
         transform: scale(.8) rotate(15deg);
     }
 
+    .players {
+        margin-top: 47px;
+    }
+
 
     footer {
         margin-top: 43px;
+        margin-bottom: 187px;
     }
 
     footer .logo img {
