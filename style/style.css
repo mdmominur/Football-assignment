@@ -140,12 +140,15 @@ main {
 .all-news {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 27px;
+    grid-gap: 50px 27px;
 }
+
+
 
 .all-news .single-news .news-thumbnail img {
     width: 100%;
 }
+
 
 .all-news .single-news .news-info {
     display: flex;
@@ -172,13 +175,14 @@ main {
     font-size: 12px;
 }
 
-/* =========================
+/* =================================
         Partnerships Style
-===========================*/
+====================================*/
 .partnerships {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 27px;
 }
 
 /* =========================
@@ -249,9 +253,6 @@ footer .copyright {
         padding: 0 15px;
     }
 
-    .partnerships {
-        text-align: center;
-    }
 
 
     .inner-banner .banner-text {
@@ -281,6 +282,9 @@ footer .copyright {
         margin-top: 47px;
     }
 
+    .partnerships {
+        text-align: center;
+    }
 
     footer {
         margin-top: 43px;
@@ -290,4 +294,137 @@ footer .copyright {
     footer .logo img {
         width: 271px;
     }
+}
+
+
+/* -----------Tablet device------------- */
+
+@media only screen and (min-width:669px) and (max-width:992px) {
+
+    .container,
+    .inner-banner {
+        width: 669px;
+        margin: 0;
+    }
+
+    .section-title {
+        margin-left: 15px;
+    }
+
+    .inner-banner,
+    .players,
+    .all-news,
+    .partnerships {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+    }
+
+    .banner {
+        padding: 55px 0 62px;
+    }
+
+
+    .inner-banner .banner-text {
+        padding-right: 50px;
+    }
+
+    .inner-banner .banner-text h2 {
+        font-size: 36px;
+        margin-top: 30;
+        margin-bottom: 30px;
+    }
+
+    .inner-banner .banner-image {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .inner-banner .banner-image img {
+        width: 100%;
+    }
+
+    .banner:hover .inner-banner .banner-image img {
+        transform: scale(.8) rotate(15deg);
+    }
+
+    .players {
+        margin-top: 47px;
+    }
+
+    .player .player-image img,
+    .player .player-image img {
+        width: 100%;
+    }
+
+    .partnerships {
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 43px;
+        margin-bottom: 187px;
+    }
+
+    footer .logo img {
+        width: 271px;
+    }
+}
+
+
+
+/* -----------Other devices---------- */
+
+@media only screen and (min-width:993px) and (max-width:1143px) {
+
+    .container,
+    .inner-banner {
+        width: 992px;
+        margin: 0;
+    }
+
+    .section-title {
+        margin-left: 15px;
+    }
+
+    .players,
+    .all-news,
+    .partnerships {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 15px;
+    }
+
+    .banner {
+        padding: 55px 0 62px;
+    }
+
+    .inner-banner {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .inner-banner .banner-text {
+        padding-right: 50px;
+    }
+
+    .inner-banner .banner-text h2 {
+        font-size: 55px;
+    }
+
+    .inner-banner .banner-image {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .inner-banner .banner-image img {
+        width: 100%;
+    }
+
+
+    .player .player-image img,
+    .player .player-image img {
+        width: 100%;
+    }
+
 }
