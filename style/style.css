@@ -241,10 +241,6 @@ footer .copyright {
         margin-left: 15px;
     }
 
-    .banner {
-        padding: 55px 0 62px;
-    }
-
     .inner-banner,
     .players,
     .all-news,
@@ -254,7 +250,9 @@ footer .copyright {
         padding: 0 15px;
     }
 
-
+    .banner {
+        padding: 55px 0 62px;
+    }
 
     .inner-banner .banner-text {
         padding-right: 50px;
